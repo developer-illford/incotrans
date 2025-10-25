@@ -2734,7 +2734,7 @@ ol li {
 
 .header-style-3 .main-bar {
   /*--main-bar--*/
-  position: relative;
+  position: fixed !important;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2784,7 +2784,7 @@ ol li {
 }
 
 .header-style-3 .navbar-toggler .icon-bar {
-  background: #fff;
+  background: #000 !important;
   height: 3px;
   border-radius: 0px;
   display: block;
@@ -11305,4 +11305,36 @@ select {
 
 .sticky-header.scrolled .logo-scroll {
   display: inline-block; /* or block depending on your layout */
+}
+@media (max-width: 991px) {
+  .header-style-3 #mobile-side-drawer,
+  .header-style-3.is-fixed #mobile-side-drawer,
+  .header-style-3.mobile-sider-drawer-menu #mobile-side-drawer {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+    margin: 0 !important;
+    transform: none !important;
+    float: none !important;
+    z-index: 99999 !important;
+  }
+
+  /* .header-style-3 .main-bar,
+  .header-style-3.is-fixed .main-bar {
+    position: relative !important;
+    overflow: visible !important;
+  } */
+
+  .header-style-3 .logo-header {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media(max-width:992px){
+  .media{
+    display: none;
+  }
+  .detail{
+    display: none;
+  }
 }
