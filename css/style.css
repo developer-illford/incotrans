@@ -5507,7 +5507,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   left: -8px;
   top: 30px;
   bottom: 30px;
-  background-color: #ff8a00;
+  background-color: #184f6e;
   transition: all 0.3s linear;
 }
 
@@ -7267,7 +7267,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .tw-testimonials1-cell .tw-testimonials1-postion {
   font-size: 14px;
-  color: #ff8a00;
+  color: #2ECC71;
   position: relative;
   padding-left: 30px;
 }
@@ -7316,7 +7316,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 @media (max-width: 480px) {
   .slick-testimonials-thumbnails .slick-active.slick-center .slick-testimonials-thumb img {
-    border-color: #ff8a00;
+    border-color: #184f6e;
   }
 
   .slick-testimonials-thumbnails .slick-active.slick-center .slick-testimonials-thumb:before {
@@ -7346,7 +7346,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: absolute;
   right: 4px;
   top: -10px;
-  background-color: #ff8a00;
+  background-color: #184f6e;
   z-index: -1;
   opacity: 0;
 }
