@@ -111,6 +111,9 @@ This files [Table of contents] are outlined below
 
 .site-bg-sky {
   background-color: #1e8fd0;
+  /* background: linear-gradient(135deg, #00000000 , #0000006e, #000000); */
+
+
 }
 
 .site-bg-sky-blue-light {
@@ -2767,8 +2770,24 @@ ol li {
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.5s ease;
-  background: transparent;
+  /* background: transparent; */
+  background: #1e8fd0; 
 }
+
+
+
+/* .header-style-3 .main-bar {
+  position: fixed !important;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.5s ease;
+  background: #3498db; 
+  backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+  z-index: 999; 
+} */
+
 
 .header-style-3 .main-bar .container,
 .header-style-3 .main-bar .container-fluid {
@@ -6996,6 +7015,29 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   z-index: 1;
   border: 15px solid transparent;
   transition: 0.5s all ease;
+}
+.tw-estimation-section {
+  position: relative;
+  background-image: url("images/background/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tw-estimation-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+  z-index: 1;
+}
+
+.tw-estimation-section > * {
+  position: relative;
+  z-index: 2; /* keeps content visible above the overlay */
 }
 
 @media (max-width: 991px) {
@@ -11463,38 +11505,3 @@ select {
   }
 }
 
-.tw-est-section-block-content h3,
-.tw-est-section-block-content p,
-.tw-est-section-block-content span {
-  color: #fff;
-  /* make sure text is white */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  /* soft dark glow for contrast */
-}
-
-/* Optional: add a thin stroke (outline) around text */
-.tw-est-section-block-content h3 {
-  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
-  /* outline effect */
-  font-weight: 700;
-}
-
-/* Optional overlay effect behind text */
-.tw-est-section-block::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(58, 51, 51, 0.4);
-  /* semi-transparent dark overlay */
-  z-index: 1;
-  border-radius: inherit;
-}
-
-.tw-est-section-block-content {
-  position: relative;
-  z-index: 2;
-  /* keep text above overlay */
-}
