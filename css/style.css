@@ -11505,8 +11505,8 @@ select {
   }
 }
 
-@media(max-width:1300px){
-  .page-content{
+@media (min-width:1200px) and (max-width:1664px) {
+  .page-content {
     margin-top:90px !important;
   }
 }
