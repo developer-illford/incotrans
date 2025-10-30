@@ -7031,7 +7031,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+    background: linear-gradient(180deg, #00000000, #00000031, #000000);
   z-index: 1;
 }
 
@@ -11505,3 +11505,8 @@ select {
   }
 }
 
+@media(max-width:1300px){
+  .page-content{
+    margin-top:90px !important;
+  }
+}
